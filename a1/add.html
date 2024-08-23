@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Pet - Pets Victoria</title>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poetsen+One&family=Ysabeau+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-left">
+                <a href="index.html"><img src="images/logo.png" alt="Logo" class="logo"></a>
+                <select name="menu" id="menu" onchange="navigateMenu()">
+                    <option value="home">Home</option>
+                    <option value="pets">Pets</option>
+                    <option value="add-more" selected>Add More</option>
+                    <option value="gallery">Gallery</option>
+                </select>
+            </div>
+            <form class="search-form">
+                <input type="text" placeholder="Search...">
+            </form>
+        </nav>
+    </header>
+
+    <main>
+        <h2 class="center-text">Add a Pet</h2>
+        <p class="center-text">You can add a new pet here</p>
+
+        <form class="pet-form" action="submit_form.php" method="post" enctype="multipart/form-data">
+            <label for="pet-name">Pet Name:</label>
+            <input type="text" id="pet-name" name="pet-name" placeholder="Provide a name for the pet" required>
+            
+            <label for="pet-type">Type:</label>
+            <select id="pet-type" name="pet-type" required>
+                <option value="" disabled selected>Choose an option</option>
+                <option value="dog">Dog</option>
+                <option value="cat">Cat</option>
+                <option value="rabbit">Rabbit</option>
+                <option value="bird">Bird</option>
+                <option value="guinea-pig">Guinea Pig</option>
+                <option value="fish">Fish</option>
+            </select>
+            
+            <label for="pet-description">Description:</label>
+            <textarea id="pet-description" name="pet-description" rows="4" placeholder="Describe the pet briefly" required></textarea>
+            
+            <label for="pet-image">Select an Image:</label>
+            <input type="file" id="pet-image" name="pet-image" accept="image/*" required>
+            
+            <label for="image-caption">Image Caption:</label>
+            <input type="text" id="image-caption" name="image-caption" placeholder="Describe the image in one word" required>
+            
+            <label for="pet-age">Age (months):</label>
+            <input type="number" id="pet-age" name="pet-age" placeholder="Age of the pet in months" min="0" required>
+            
+            <label for="pet-location">Location:</label>
+            <input type="text" id="pet-location" name="pet-location" placeholder="Location of the pet" required>
+            
+            <div class="form-buttons">
+                <button type="submit">Submit</button>
+                <button type="reset">Clear</button>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Devesh Saraf s3991013</p>
+    </footer>
+</body>
+</html>

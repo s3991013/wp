@@ -1,0 +1,213 @@
+/* General Styles */
+body {
+    margin: 0 auto;
+    width: 1200px;
+    font-family: 'Ysabeau SC', sans-serif;
+    background-color: #fcf9ec; /* Main background color */
+    color: #36454F; /* Text color */
+}
+
+/* Header and Navigation Bar */
+header {
+    background-color: #008080; /* Nav background color */
+    padding: 10px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+.logo { 
+    height: 50px;
+    width: auto;
+  }
+  .image {
+    float: right;
+  }
+
+  .search-form input {
+    font-size: 16px;
+    padding: 5px;
+  }
+
+  .circle-image {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+  }
+  select#menu {
+    font-family: 'Poetsen One', sans-serif;
+    font-size: 16px;
+  }
+
+/* Main Content */
+.intro h2 {
+    font-family: 'Poetsen One', sans-serif;
+    font-size: 1.5em;
+    margin-top: 10px;
+  }
+.image {
+    float: right;
+  }
+
+.circle-image {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+  }
+h2.center-text {
+    text-align: center;
+    color: #008080; 
+    font-family: 'Poetsen One', sans-serif;
+}
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.content-left {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.content-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.main-heading {
+    font-size: 2.5em;
+    color: #008080; /* H1 color */
+    font-family: 'Permanent Marker', cursive;
+    margin-bottom: 10px;
+}
+
+.sub-heading {
+    font-size: 2em;
+    color: #E57F3D; /* H2 color */
+    font-family: 'Poetsen One', sans-serif;
+    }
+p.center-text {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+
+.content {
+    display: flex;
+    align-items: flex-start;
+    padding: 20px 0;
+}
+
+.left-image {
+    float: left;
+    margin-right: 20px;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+table {
+    border-collapse: collapse;
+    width: 60%;
+}
+
+th, td {
+    border: 1px solid #36454F;
+    padding: 8px;
+    text-align: left;
+    font-family: 'Poetsen One', sans-serif;
+}
+
+th {
+    background-color: #008080;
+    color: #fcf9ec;
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gallery-item {
+    text-align: center;
+}
+
+.rounded-image {
+    border-radius: 10px;
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.image-caption {
+    margin-top: 10px;
+    font-family: 'Poetsen One', sans-serif;
+}
+.pet-form {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pet-form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-family: 'Poetsen One', sans-serif;
+}
+
+.pet-form input, .pet-form select, .pet-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Ysabeau SC', sans-serif;
+}
+
+.pet-form input[type="file"] {
+    padding: 0;
+}
+
+.form-buttons {
+    text-align: center;
+}
+
+.form-buttons button {
+    background-color: #008080;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 4px;
+    font-family: 'Poetsen One', sans-serif;
+    cursor: pointer;
+}
+
+.form-buttons button[type="reset"] {
+    background-color: #E57F3D; /* Button color for reset */
+}
+
+.form-buttons button:hover {
+    opacity: 0.8;
+}
+
+
+footer {
+    background-color: #E57F3D; /* Footer background color */
+    color: #008080; /* Footer text color */
+    text-align: center;
+    padding: 10px 0;
+    font-family: 'Ysabeau SC', sans-serif;
+}
