@@ -1,6 +1,6 @@
 <?php
 session_start();
-require 'includes\db_connect.inc';
+require 'db_connect.inc';
 
 //  username is set in the URL
 if (isset($_GET['username']) && !empty($_GET['username'])) {
@@ -33,7 +33,7 @@ if (isset($_GET['username']) && !empty($_GET['username'])) {
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<?php include 'includes\nav.inc'; ?>
+<?php include 'nav.inc'; ?>
 
 <div class="container mt-5">
     <h2 class="page-title"><?php echo htmlspecialchars($username); ?>'s Collection</h2>
@@ -61,6 +61,6 @@ if (isset($_GET['username']) && !empty($_GET['username'])) {
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<?php include 'includes\footer.inc'; ?>
+<?php include 'footer.inc'; ?>
 </body>
 </html>
