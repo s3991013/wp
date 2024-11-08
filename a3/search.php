@@ -1,6 +1,6 @@
 <?php
 session_start();
-require 'includes\db_connect.inc';
+require 'db_connect.inc';
 
 $search_keyword = isset($_GET['keyword']) ? trim($_GET['keyword']) : '';
 $type_filter = isset($_GET['type']) ? trim($_GET['type']) : '';
@@ -29,10 +29,10 @@ $result = $stmt->get_result();
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ysabeau+SC&family=Poetsen+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <?php include 'includes\header.inc'; ?>
+    <?php include 'header.inc'; ?>
 </head>
 <body>
-<?php include 'includes\nav.inc'; ?>
+<?php include 'nav.inc'; ?>
 
 <div class="container mt-5">
     <!-- Search Header -->
@@ -81,6 +81,6 @@ $result = $stmt->get_result();
     </div>
 </div>
 
-<?php include 'includes\footer.inc'; ?>
+<?php include 'footer.inc'; ?>
 </body>
 </html>
