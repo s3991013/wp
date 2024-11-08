@@ -1,6 +1,6 @@
 <?php
 session_start();
-require 'includes\db_connect.inc';
+require 'includes/db_connect.inc';
 
 // success message is set in the session
 $successMessage = '';
