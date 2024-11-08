@@ -1,6 +1,6 @@
 <?php
 session_start();
-require 'includes\db_connect.inc';
+require 'db_connect.inc';
 
 if (!isset($_SESSION['loggedin'])) {
     header("Location: login.php");
@@ -53,10 +53,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <html lang="en">
 <head>
     <title>Edit Pet - Pets Victoria</title>
-    <?php include 'includes\header.inc'; ?>
+    <?php include 'header.inc'; ?>
 </head>
 <body>
-<?php include 'includes\nav.inc'; ?>
+<?php include 'nav.inc'; ?>
 
 <div class="container mt-5">
     <h2>Edit Pet Details</h2>
@@ -97,6 +97,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </form>
 </div>
 
-<?php include 'includes\footer.inc'; ?>
+<?php include 'footer.inc'; ?>
 </body>
 </html>
