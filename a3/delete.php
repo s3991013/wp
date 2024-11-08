@@ -1,6 +1,6 @@
 <?php
 session_start();
-require 'includes\db_connect.inc';
+require 'db_connect.inc';
 
 // Check if the user is logged in
 if (!isset($_SESSION['loggedin']) || !$_SESSION['loggedin']) {
@@ -61,10 +61,10 @@ if (isset($_GET['petid']) && !empty($_GET['petid'])) {
     <link href="https://fonts.googleapis.com/css2?family=Ysabeau+SC&family=Poetsen+One&display=swap&family=Permanent+Marker&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
-    <?php include 'includes\header.inc'; ?>
+    <?php include 'header.inc'; ?>
 </head>
 <body>
-<?php include 'includes\nav.inc'; ?>
+<?php include 'nav.inc'; ?>
 
 <div class="container mt-5">
     <h2 class="text-center mb-4">Delete Pet</h2>
@@ -104,6 +104,6 @@ if (isset($_GET['petid']) && !empty($_GET['petid'])) {
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<?php include 'includes\footer.inc'; ?>
+<?php include 'footer.inc'; ?>
 </body>
 </html>
