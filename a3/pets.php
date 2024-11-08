@@ -1,6 +1,6 @@
 <?php
 session_start();
-require 'includes\db_connect.inc';
+require 'db_connect.inc';
 
 //  pets from the database
 $query = "SELECT petid, petname, type, age, location FROM pets";
@@ -15,10 +15,10 @@ $pets = $conn->query($query);
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ysabeau+SC&family=Poetsen+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <?php include 'includes\header.inc'; ?>
+    <?php include 'header.inc'; ?>
 </head>
 <body>
-<?php include 'includes\nav.inc'; ?>
+<?php include 'nav.inc'; ?>
 
 <div class="container mt-5">
     <!-- Page Header -->
@@ -59,6 +59,6 @@ $pets = $conn->query($query);
     </div>
 </div>
 
-<?php include 'includes\footer.inc'; ?>
+<?php include 'footer.inc'; ?>
 </body>
 </html>
