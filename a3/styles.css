@@ -1,0 +1,146 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Body Styling */
+body {
+    font-family: 'Ysabeau SC', sans-serif;
+    background-color: #f9f7f4;
+    color: #333;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #01796F; /* Teal color */
+    color: #fff;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+.navbar a:hover {
+    color: #ff884d;
+}
+
+/* Main Section */
+.main-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+
+/* Hero Title and Subtitle Styling */
+.hero-title {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 3.5rem;
+    color: #FF6F61; /* Orange color */
+    margin-bottom: 0.5rem;
+    text-align: right;
+}
+
+.hero-subtitle {
+    font-family: 'Ysabeau SC', sans-serif;
+    font-size: 2rem;
+    color: #01796F; /* Teal color matching navbar */
+    margin-bottom: 1rem;
+    text-align: right;
+}
+
+/* Carousel Styling */
+.custom-carousel {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.custom-carousel img {
+    height: 300px; /* Fixed height */
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.custom-carousel .carousel-control-prev-icon,
+.custom-carousel .carousel-control-next-icon {
+    background-color: #01796F;
+    border-radius: 50%;
+}
+
+/* Search Section */
+.search-section {
+    max-width: 600px;
+    margin: 2rem auto;
+}
+
+.search-bar .form-control {
+    border-radius: 0;
+    border: none;
+    font-family: 'Ysabeau SC', sans-serif;
+}
+
+.search-bar .form-select {
+    border-radius: 0;
+    border: none;
+    font-family: 'Ysabeau SC', sans-serif;
+}
+
+.search-bar .search-button {
+    background-color: #01796F;
+    color: white;
+    font-weight: bold;
+    border: none;
+    font-family: 'Ysabeau SC', sans-serif;
+}
+
+.search-bar .search-button:hover {
+    background-color: #015f57;
+}
+
+/* Mission Section */
+.mission-section {
+    background-color: #fef3da;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-top: 2rem;
+}
+
+.mission-title {
+    font-family: 'Poetsen One', sans-serif;
+    font-size: 2rem;
+    color: #FF6F61;
+    margin-bottom: 1rem;
+}
+
+.mission-description {
+    font-size: 1rem;
+    max-width: 700px;
+    margin: 0 auto;
+    color: #555;
+    line-height: 1.6;
+    font-family: 'Ysabeau SC', sans-serif;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #ff884d;
+    padding: 1rem;
+    color: white;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+    font-family: 'Ysabeau SC', sans-serif;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ffddc1;
+}
