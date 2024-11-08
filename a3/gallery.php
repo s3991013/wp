@@ -1,6 +1,6 @@
 <?php
 session_start();
-require 'includes\db_connect.inc';
+require 'db_connect.inc';
 
 // fetch all pets from the database
 $stmt = $conn->prepare("SELECT * FROM pets");
@@ -18,7 +18,7 @@ $result = $stmt->get_result();
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<?php include 'includes\nav.inc'; ?>
+<?php include 'nav.inc'; ?>
 
 <div class="container mt-5">
     <h2 class="text-center">Pets Victoria has a lot to offer!</h2>
@@ -79,6 +79,6 @@ $result = $stmt->get_result();
         });
     });
 </script>
-<?php include 'includes\footer.inc'; ?>
+<?php include 'footer.inc'; ?>
 </body>
 </html>
