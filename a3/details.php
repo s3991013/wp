@@ -1,6 +1,6 @@
 <?php
 session_start();
-require 'includes\db_connect.inc';
+require 'db_connect.inc';
 
 // Check if pet ID is set in the URL
 if (isset($_GET['id']) && is_numeric($_GET['id'])) {
@@ -37,7 +37,7 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<?php include 'includes\nav.inc'; ?>
+<?php include 'nav.inc'; ?>
 
 <div class="container mt-5">
     <!-- Pet Details -->
@@ -61,6 +61,6 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<?php include 'includes\footer.inc'; ?>
+<?php include 'footer.inc'; ?>
 </body>
 </html>
